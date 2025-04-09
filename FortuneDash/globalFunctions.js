@@ -142,7 +142,9 @@ if (window.cookie == 0){
   function globalDropHamper(player,table123) {
     console.log("*** player drop hamper");
 
-   //this.hitenemySnd.play();
+   this.CollectSnd = this.sound.add("collect").setVolume(0.9);
+    // play the sound
+    this.CollectSnd.play()
 
 	// increase key count
     window.table++;
